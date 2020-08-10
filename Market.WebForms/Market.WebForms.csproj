@@ -49,6 +49,9 @@
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
     </Reference>
+    <Reference Include="Dul, Version=1.2.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dul.1.2.5\lib\netstandard2.0\Dul.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
@@ -80,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\ZipCodeAddFromFile.aspx" />
+    <Content Include="AlsoBought.aspx" />
     <Content Include="CategoryAdd.aspx" />
     <Content Include="CategoryList.aspx" />
     <Content Include="CheckID.aspx" />
@@ -88,6 +92,7 @@
     <Content Include="Company.xml" />
     <Content Include="Company.xsl" />
     <Content Include="Company.xslt" />
+    <Content Include="Controls\AlsoBoughtUserControl.ascx" />
     <Content Include="Controls\CategoryListUserControl.ascx" />
     <Content Include="Controls\EventNamesUserControl.ascx" />
     <Content Include="Controls\Header.ascx" />
@@ -96,6 +101,8 @@
     <Content Include="Controls\MarkList.ascx" />
     <Content Include="Controls\Navigator.ascx" />
     <Content Include="Controls\ProductCatalogUserControl.ascx" />
+    <Content Include="Controls\RelatedProductUserControl.ascx" />
+    <Content Include="Controls\ReviewListUserControl.ascx" />
     <Content Include="Controls\SearchFormUserControl.ascx" />
     <Content Include="GetZipCode.aspx" />
     <Content Include="Global.asax" />
@@ -347,6 +354,7 @@
     <Content Include="Login.aspx" />
     <Content Include="ProductAdd.aspx" />
     <Content Include="ProductCatalog.aspx" />
+    <Content Include="ProductDetails.aspx" />
     <Content Include="ProductImages\1.jpg" />
     <Content Include="ProductImages\bigs\1.jpg" />
     <Content Include="ProductImages\bigs\BOOK-01.jpg" />
@@ -373,6 +381,7 @@
     <Content Include="Register.aspx" />
     <Content Include="Documents\zipcode_20090929.csv" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
+    <Content Include="ReviewList.aspx" />
     <Content Include="Scripts\jquery-3.5.1.js" />
     <Content Include="Scripts\jquery-3.5.1.min.js" />
     <Content Include="Scripts\jquery-3.5.1.slim.js" />
@@ -382,6 +391,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="SearchForm.aspx" />
     <Content Include="SearchResults.aspx" />
+    <Content Include="ShowImages.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -391,6 +401,13 @@
     </Compile>
     <Compile Include="Admin\ZipCodeAddFromFile.aspx.designer.cs">
       <DependentUpon>ZipCodeAddFromFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlsoBought.aspx.cs">
+      <DependentUpon>AlsoBought.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlsoBought.aspx.designer.cs">
+      <DependentUpon>AlsoBought.aspx</DependentUpon>
     </Compile>
     <Compile Include="CategoryAdd.aspx.cs">
       <DependentUpon>CategoryAdd.aspx</DependentUpon>
@@ -426,6 +443,13 @@
     </Compile>
     <Compile Include="Company.aspx.designer.cs">
       <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AlsoBoughtUserControl.ascx.cs">
+      <DependentUpon>AlsoBoughtUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AlsoBoughtUserControl.ascx.designer.cs">
+      <DependentUpon>AlsoBoughtUserControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\CategoryListUserControl.ascx.cs">
       <DependentUpon>CategoryListUserControl.ascx</DependentUpon>
@@ -483,6 +507,20 @@
     <Compile Include="Controls\ProductCatalogUserControl.ascx.designer.cs">
       <DependentUpon>ProductCatalogUserControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\RelatedProductUserControl.ascx.cs">
+      <DependentUpon>RelatedProductUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RelatedProductUserControl.ascx.designer.cs">
+      <DependentUpon>RelatedProductUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ReviewListUserControl.ascx.cs">
+      <DependentUpon>ReviewListUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ReviewListUserControl.ascx.designer.cs">
+      <DependentUpon>ReviewListUserControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\SearchFormUserControl.ascx.cs">
       <DependentUpon>SearchFormUserControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -539,6 +577,13 @@
     <Compile Include="ProductCatalog.aspx.designer.cs">
       <DependentUpon>ProductCatalog.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ProductList.aspx.cs">
       <DependentUpon>ProductList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -561,6 +606,13 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ReviewList.aspx.cs">
+      <DependentUpon>ReviewList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReviewList.aspx.designer.cs">
+      <DependentUpon>ReviewList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SearchForm.aspx.cs">
       <DependentUpon>SearchForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -574,6 +626,13 @@
     </Compile>
     <Compile Include="SearchResults.aspx.designer.cs">
       <DependentUpon>SearchResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowImages.aspx.cs">
+      <DependentUpon>ShowImages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowImages.aspx.designer.cs">
+      <DependentUpon>ShowImages.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
