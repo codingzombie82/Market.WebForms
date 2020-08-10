@@ -1,4 +1,4 @@
-﻿namespace DotNetSale.Models
+﻿namespace Market.Models
 {
     /// <summary>
     /// Category 클래스: Categories 테이블과 일대일

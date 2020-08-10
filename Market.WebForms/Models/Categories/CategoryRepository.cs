@@ -5,7 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 
-namespace DotNetSale.Models
+namespace Market.Models
 {
     public class CategoryRepository
     {

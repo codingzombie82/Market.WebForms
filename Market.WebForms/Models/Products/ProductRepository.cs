@@ -3,7 +3,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace DotNetSale.Models
+namespace Market.Models
 {
     public class ProductRepository
     {

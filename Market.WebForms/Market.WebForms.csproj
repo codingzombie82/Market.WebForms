@@ -80,12 +80,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\ZipCodeAddFromFile.aspx" />
+    <Content Include="CategoryAdd.aspx" />
+    <Content Include="CategoryList.aspx" />
     <Content Include="CheckID.aspx" />
     <Content Include="CheckLogin.aspx" />
     <Content Include="Company.aspx" />
     <Content Include="Company.xml" />
     <Content Include="Company.xsl" />
     <Content Include="Company.xslt" />
+    <Content Include="Controls\CategoryListUserControl.ascx" />
     <Content Include="Controls\Header.ascx" />
     <Content Include="Controls\LoginUserControl.ascx" />
     <Content Include="Controls\MainEvent.ascx" />
@@ -340,6 +343,7 @@
     <Content Include="images\title_statistic.gif" />
     <Content Include="images\top_group_background.gif" />
     <Content Include="Login.aspx" />
+    <Content Include="ProductAdd.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Documents\zipcode_20090929.csv" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
@@ -359,6 +363,20 @@
     </Compile>
     <Compile Include="Admin\ZipCodeAddFromFile.aspx.designer.cs">
       <DependentUpon>ZipCodeAddFromFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryAdd.aspx.cs">
+      <DependentUpon>CategoryAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryAdd.aspx.designer.cs">
+      <DependentUpon>CategoryAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryList.aspx.cs">
+      <DependentUpon>CategoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryList.aspx.designer.cs">
+      <DependentUpon>CategoryList.aspx</DependentUpon>
     </Compile>
     <Compile Include="CheckID.aspx.cs">
       <DependentUpon>CheckID.aspx</DependentUpon>
@@ -380,6 +398,13 @@
     </Compile>
     <Compile Include="Company.aspx.designer.cs">
       <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CategoryListUserControl.ascx.cs">
+      <DependentUpon>CategoryListUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CategoryListUserControl.ascx.designer.cs">
+      <DependentUpon>CategoryListUserControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\Header.ascx.cs">
       <DependentUpon>Header.ascx</DependentUpon>
@@ -458,6 +483,13 @@
     <Compile Include="Models\Products\ProductRepository.cs" />
     <Compile Include="Models\Reviews\ReviewsDB.cs" />
     <Compile Include="Models\Security.cs" />
+    <Compile Include="ProductAdd.aspx.cs">
+      <DependentUpon>ProductAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductAdd.aspx.designer.cs">
+      <DependentUpon>ProductAdd.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

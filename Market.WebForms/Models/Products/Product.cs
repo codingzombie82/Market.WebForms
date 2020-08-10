@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DotNetSale.Models
+namespace Market.Models
 {
     /// <summary>
     /// 상품의 필드를 구성하는 상품 상세 클래스
