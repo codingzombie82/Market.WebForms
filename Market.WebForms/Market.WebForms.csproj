@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=3.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.5.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
     </Reference>
@@ -76,15 +79,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\ZipCodeAddFromFile.aspx" />
+    <Content Include="CheckID.aspx" />
+    <Content Include="CheckLogin.aspx" />
     <Content Include="Company.aspx" />
     <Content Include="Company.xml" />
     <Content Include="Company.xsl" />
     <Content Include="Company.xslt" />
     <Content Include="Controls\Header.ascx" />
+    <Content Include="Controls\LoginUserControl.ascx" />
     <Content Include="Controls\MainEvent.ascx" />
     <Content Include="Controls\MarkList.ascx" />
     <Content Include="Controls\Navigator.ascx" />
     <Content Include="Controls\SearchFormUserControl.ascx" />
+    <Content Include="GetZipCode.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\arrow_right.gif" />
     <Content Include="images\arrow_right_over.gif" />
@@ -331,9 +339,41 @@
     <Content Include="images\title_productlist.gif" />
     <Content Include="images\title_statistic.gif" />
     <Content Include="images\top_group_background.gif" />
+    <Content Include="Login.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Documents\zipcode_20090929.csv" />
+    <None Include="Scripts\jquery-3.5.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.5.1.js" />
+    <Content Include="Scripts\jquery-3.5.1.min.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\ZipCodeAddFromFile.aspx.cs">
+      <DependentUpon>ZipCodeAddFromFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ZipCodeAddFromFile.aspx.designer.cs">
+      <DependentUpon>ZipCodeAddFromFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckID.aspx.cs">
+      <DependentUpon>CheckID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckID.aspx.designer.cs">
+      <DependentUpon>CheckID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckLogin.aspx.cs">
+      <DependentUpon>CheckLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckLogin.aspx.designer.cs">
+      <DependentUpon>CheckLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Company.aspx.cs">
       <DependentUpon>Company.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -347,6 +387,13 @@
     </Compile>
     <Compile Include="Controls\Header.ascx.designer.cs">
       <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoginUserControl.ascx.cs">
+      <DependentUpon>LoginUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LoginUserControl.ascx.designer.cs">
+      <DependentUpon>LoginUserControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\MainEvent.ascx.cs">
       <DependentUpon>MainEvent.ascx</DependentUpon>
@@ -376,8 +423,22 @@
     <Compile Include="Controls\SearchFormUserControl.ascx.designer.cs">
       <DependentUpon>SearchFormUserControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="GetZipCode.aspx.cs">
+      <DependentUpon>GetZipCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetZipCode.aspx.designer.cs">
+      <DependentUpon>GetZipCode.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
@@ -398,11 +459,20 @@
     <Compile Include="Models\Reviews\ReviewsDB.cs" />
     <Compile Include="Models\Security.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />
     <Content Include="images\ProductNewHitBestNone.psd" />
     <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.5.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -410,9 +480,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Documents\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
