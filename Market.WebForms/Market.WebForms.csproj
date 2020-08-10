@@ -82,16 +82,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddToCart.aspx" />
     <Content Include="Admin\ZipCodeAddFromFile.aspx" />
+    <Content Include="Agreement.aspx" />
+    <Content Include="Agreement.txt" />
     <Content Include="AlsoBought.aspx" />
     <Content Include="CategoryAdd.aspx" />
     <Content Include="CategoryList.aspx" />
     <Content Include="CheckID.aspx" />
     <Content Include="CheckLogin.aspx" />
+    <Content Include="Common\Agreement.aspx" />
     <Content Include="Company.aspx" />
     <Content Include="Company.xml" />
     <Content Include="Company.xsl" />
     <Content Include="Company.xslt" />
+    <Content Include="CompanyAdmin.aspx" />
     <Content Include="Controls\AlsoBoughtUserControl.ascx" />
     <Content Include="Controls\CategoryListUserControl.ascx" />
     <Content Include="Controls\EventNamesUserControl.ascx" />
@@ -100,10 +105,12 @@
     <Content Include="Controls\MainEvent.ascx" />
     <Content Include="Controls\MarkList.ascx" />
     <Content Include="Controls\Navigator.ascx" />
+    <Content Include="Controls\PopularItems.ascx" />
     <Content Include="Controls\ProductCatalogUserControl.ascx" />
     <Content Include="Controls\RelatedProductUserControl.ascx" />
     <Content Include="Controls\ReviewListUserControl.ascx" />
     <Content Include="Controls\SearchFormUserControl.ascx" />
+    <Content Include="Controls\TodayShoppingUserControl.ascx" />
     <Content Include="EventNames.aspx" />
     <Content Include="GetZipCode.aspx" />
     <Content Include="Global.asax" />
@@ -353,6 +360,7 @@
     <Content Include="images\title_statistic.gif" />
     <Content Include="images\top_group_background.gif" />
     <Content Include="Login.aspx" />
+    <Content Include="PopularItemsPage.aspx" />
     <Content Include="ProductAdd.aspx" />
     <Content Include="ProductCatalog.aspx" />
     <Content Include="ProductDetails.aspx" />
@@ -393,16 +401,31 @@
     <Content Include="SearchForm.aspx" />
     <Content Include="SearchID.aspx" />
     <Content Include="SearchResults.aspx" />
+    <Content Include="ShoppingCart.aspx" />
     <Content Include="ShowImages.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddToCart.aspx.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddToCart.aspx.designer.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\ZipCodeAddFromFile.aspx.cs">
       <DependentUpon>ZipCodeAddFromFile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\ZipCodeAddFromFile.aspx.designer.cs">
       <DependentUpon>ZipCodeAddFromFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agreement.aspx.cs">
+      <DependentUpon>Agreement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agreement.aspx.designer.cs">
+      <DependentUpon>Agreement.aspx</DependentUpon>
     </Compile>
     <Compile Include="AlsoBought.aspx.cs">
       <DependentUpon>AlsoBought.aspx</DependentUpon>
@@ -439,12 +462,26 @@
     <Compile Include="CheckLogin.aspx.designer.cs">
       <DependentUpon>CheckLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Common\Agreement.aspx.cs">
+      <DependentUpon>Agreement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Agreement.aspx.designer.cs">
+      <DependentUpon>Agreement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Company.aspx.cs">
       <DependentUpon>Company.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Company.aspx.designer.cs">
       <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyAdmin.aspx.cs">
+      <DependentUpon>CompanyAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyAdmin.aspx.designer.cs">
+      <DependentUpon>CompanyAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controls\AlsoBoughtUserControl.ascx.cs">
       <DependentUpon>AlsoBoughtUserControl.ascx</DependentUpon>
@@ -502,6 +539,13 @@
     <Compile Include="Controls\Navigator.ascx.designer.cs">
       <DependentUpon>Navigator.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\PopularItems.ascx.cs">
+      <DependentUpon>PopularItems.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PopularItems.ascx.designer.cs">
+      <DependentUpon>PopularItems.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ProductCatalogUserControl.ascx.cs">
       <DependentUpon>ProductCatalogUserControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -529,6 +573,13 @@
     </Compile>
     <Compile Include="Controls\SearchFormUserControl.ascx.designer.cs">
       <DependentUpon>SearchFormUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TodayShoppingUserControl.ascx.cs">
+      <DependentUpon>TodayShoppingUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TodayShoppingUserControl.ascx.designer.cs">
+      <DependentUpon>TodayShoppingUserControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="EventNames.aspx.cs">
       <DependentUpon>EventNames.aspx</DependentUpon>
@@ -572,6 +623,13 @@
     <Compile Include="Models\Products\ProductRepository.cs" />
     <Compile Include="Models\Reviews\ReviewsDB.cs" />
     <Compile Include="Models\Security.cs" />
+    <Compile Include="PopularItemsPage.aspx.cs">
+      <DependentUpon>PopularItemsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopularItemsPage.aspx.designer.cs">
+      <DependentUpon>PopularItemsPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ProductAdd.aspx.cs">
       <DependentUpon>ProductAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -642,6 +700,13 @@
     </Compile>
     <Compile Include="SearchResults.aspx.designer.cs">
       <DependentUpon>SearchResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
     </Compile>
     <Compile Include="ShowImages.aspx.cs">
       <DependentUpon>ShowImages.aspx</DependentUpon>
