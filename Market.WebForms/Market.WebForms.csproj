@@ -104,6 +104,7 @@
     <Content Include="Controls\RelatedProductUserControl.ascx" />
     <Content Include="Controls\ReviewListUserControl.ascx" />
     <Content Include="Controls\SearchFormUserControl.ascx" />
+    <Content Include="EventNames.aspx" />
     <Content Include="GetZipCode.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\arrow_right.gif" />
@@ -390,6 +391,7 @@
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="SearchForm.aspx" />
+    <Content Include="SearchID.aspx" />
     <Content Include="SearchResults.aspx" />
     <Content Include="ShowImages.aspx" />
     <Content Include="Web.config" />
@@ -528,6 +530,13 @@
     <Compile Include="Controls\SearchFormUserControl.ascx.designer.cs">
       <DependentUpon>SearchFormUserControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="EventNames.aspx.cs">
+      <DependentUpon>EventNames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventNames.aspx.designer.cs">
+      <DependentUpon>EventNames.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GetZipCode.aspx.cs">
       <DependentUpon>GetZipCode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -619,6 +628,13 @@
     </Compile>
     <Compile Include="SearchForm.aspx.designer.cs">
       <DependentUpon>SearchForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchID.aspx.cs">
+      <DependentUpon>SearchID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchID.aspx.designer.cs">
+      <DependentUpon>SearchID.aspx</DependentUpon>
     </Compile>
     <Compile Include="SearchResults.aspx.cs">
       <DependentUpon>SearchResults.aspx</DependentUpon>
