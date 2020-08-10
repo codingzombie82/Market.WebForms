@@ -43,7 +43,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,16 +76,332 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Company.aspx" />
+    <Content Include="Company.xml" />
+    <Content Include="Company.xsl" />
+    <Content Include="Company.xslt" />
+    <Content Include="Controls\Header.ascx" />
+    <Content Include="Controls\MainEvent.ascx" />
+    <Content Include="Controls\MarkList.ascx" />
+    <Content Include="Controls\Navigator.ascx" />
+    <Content Include="Controls\SearchFormUserControl.ascx" />
     <Content Include="Global.asax" />
+    <Content Include="images\arrow_right.gif" />
+    <Content Include="images\arrow_right_over.gif" />
+    <Content Include="images\background.gif" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bg_footer.gif" />
+    <Content Include="images\bg_lft.gif" />
+    <Content Include="images\bg_lft.jpg" />
+    <Content Include="images\bg_main_right_top.gif" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\bottom_01.gif" />
+    <Content Include="images\btn_top.gif" />
+    <Content Include="images\bz_001_title_poll.gif" />
+    <Content Include="images\cart_noitem.gif" />
+    <Content Include="images\commentcount.gif" />
+    <Content Include="images\ext_ace.gif" />
+    <Content Include="images\ext_ai.gif" />
+    <Content Include="images\ext_alz.gif" />
+    <Content Include="images\ext_arj.gif" />
+    <Content Include="images\ext_asa.gif" />
+    <Content Include="images\ext_asax.gif" />
+    <Content Include="images\ext_ascx.gif" />
+    <Content Include="images\ext_asf.gif" />
+    <Content Include="images\ext_asmx.gif" />
+    <Content Include="images\ext_asp.gif" />
+    <Content Include="images\ext_aspx.gif" />
+    <Content Include="images\ext_asx.gif" />
+    <Content Include="images\ext_au.gif" />
+    <Content Include="images\ext_avi.gif" />
+    <Content Include="images\ext_bat.gif" />
+    <Content Include="images\ext_bmp.gif" />
+    <Content Include="images\ext_c.gif" />
+    <Content Include="images\ext_cab.gif" />
+    <Content Include="images\ext_chm.gif" />
+    <Content Include="images\ext_com.gif" />
+    <Content Include="images\ext_config.gif" />
+    <Content Include="images\ext_cpp.gif" />
+    <Content Include="images\ext_cs.gif" />
+    <Content Include="images\ext_csproj.gif" />
+    <Content Include="images\ext_css.gif" />
+    <Content Include="images\ext_csv.gif" />
+    <Content Include="images\ext_deleted.gif" />
+    <Content Include="images\ext_disco.gif" />
+    <Content Include="images\ext_dll.gif" />
+    <Content Include="images\ext_doc.gif" />
+    <Content Include="images\ext_doc_.gif" />
+    <Content Include="images\ext_eml.gif" />
+    <Content Include="images\ext_exe.gif" />
+    <Content Include="images\ext_exe_.gif" />
+    <Content Include="images\ext_gif.gif" />
+    <Content Include="images\ext_gz.gif" />
+    <Content Include="images\ext_h.gif" />
+    <Content Include="images\ext_hlp.gif" />
+    <Content Include="images\ext_htm.gif" />
+    <Content Include="images\ext_html.gif" />
+    <Content Include="images\ext_hwp.gif" />
+    <Content Include="images\ext_hwt.gif" />
+    <Content Include="images\ext_inc.gif" />
+    <Content Include="images\ext_ini.gif" />
+    <Content Include="images\ext_jpeg.gif" />
+    <Content Include="images\ext_jpg.gif" />
+    <Content Include="images\ext_js.gif" />
+    <Content Include="images\ext_lzh.gif" />
+    <Content Include="images\ext_m3u.gif" />
+    <Content Include="images\ext_max.gif" />
+    <Content Include="images\ext_mdb.gif" />
+    <Content Include="images\ext_mid.gif" />
+    <Content Include="images\ext_mov.gif" />
+    <Content Include="images\ext_mp2.gif" />
+    <Content Include="images\ext_mp3.gif" />
+    <Content Include="images\ext_mpe.gif" />
+    <Content Include="images\ext_mpeg.gif" />
+    <Content Include="images\ext_mpg.gif" />
+    <Content Include="images\ext_none.gif" />
+    <Content Include="images\ext_pcx.gif" />
+    <Content Include="images\ext_pdb.gif" />
+    <Content Include="images\ext_pdf.gif" />
+    <Content Include="images\ext_pdf_.gif" />
+    <Content Include="images\ext_pls.gif" />
+    <Content Include="images\ext_png.gif" />
+    <Content Include="images\ext_ppt.gif" />
+    <Content Include="images\ext_ppt_.gif" />
+    <Content Include="images\ext_psd.gif" />
+    <Content Include="images\ext_ra.gif" />
+    <Content Include="images\ext_ram.gif" />
+    <Content Include="images\ext_rar.gif" />
+    <Content Include="images\ext_rar_.gif" />
+    <Content Include="images\ext_ra_.gif" />
+    <Content Include="images\ext_reg.gif" />
+    <Content Include="images\ext_resx.gif" />
+    <Content Include="images\ext_rm.gif" />
+    <Content Include="images\ext_rmi.gif" />
+    <Content Include="images\ext_rtf.gif" />
+    <Content Include="images\ext_sql.gif" />
+    <Content Include="images\ext_swf.gif" />
+    <Content Include="images\ext_swf_.gif" />
+    <Content Include="images\ext_sys.gif" />
+    <Content Include="images\ext_tar.gif" />
+    <Content Include="images\ext_tga.gif" />
+    <Content Include="images\ext_tif.gif" />
+    <Content Include="images\ext_ttf.gif" />
+    <Content Include="images\ext_txt.gif" />
+    <Content Include="images\ext_unknown.gif" />
+    <Content Include="images\ext_vb.gif" />
+    <Content Include="images\ext_vbs.gif" />
+    <Content Include="images\ext_vsdisco.gif" />
+    <Content Include="images\ext_wav.gif" />
+    <Content Include="images\ext_wax.gif" />
+    <Content Include="images\ext_webinfo.gif" />
+    <Content Include="images\ext_wma.gif" />
+    <Content Include="images\ext_wmv.gif" />
+    <Content Include="images\ext_wmx.gif" />
+    <Content Include="images\ext_wri.gif" />
+    <Content Include="images\ext_wvx.gif" />
+    <Content Include="images\ext_xls.gif" />
+    <Content Include="images\ext_xml.gif" />
+    <Content Include="images\ext_xml_.gif" />
+    <Content Include="images\ext_zip.gif" />
+    <Content Include="images\gray.gif" />
+    <Content Include="images\group_background.gif" />
+    <Content Include="images\h_t_01.gif" />
+    <Content Include="images\h_t_02.gif" />
+    <Content Include="images\h_t_bg.gif" />
+    <Content Include="images\icon_addExistingItem.gif" />
+    <Content Include="images\icon_addExistingItem_over.gif" />
+    <Content Include="images\icon_addNewItem.gif" />
+    <Content Include="images\icon_addNewItem_over.gif" />
+    <Content Include="images\icon_autoFormat.gif" />
+    <Content Include="images\icon_autoFormat_over.gif" />
+    <Content Include="images\icon_bullets.gif" />
+    <Content Include="images\icon_bullets_over.gif" />
+    <Content Include="images\icon_clipboard.gif" />
+    <Content Include="images\icon_clipboard_over.gif" />
+    <Content Include="images\icon_CloseSolution.gif" />
+    <Content Include="images\icon_CloseSolution_over.gif" />
+    <Content Include="images\icon_completeWord.gif" />
+    <Content Include="images\icon_completeWord_over.gif" />
+    <Content Include="images\icon_copy.gif" />
+    <Content Include="images\icon_copy_over.gif" />
+    <Content Include="images\icon_cut.gif" />
+    <Content Include="images\icon_cut_over.gif" />
+    <Content Include="images\icon_delete.gif" />
+    <Content Include="images\icon_delete_over.gif" />
+    <Content Include="images\icon_dir.gif" />
+    <Content Include="images\icon_documentMap.gif" />
+    <Content Include="images\icon_documentMap_over.gif" />
+    <Content Include="images\icon_exchangeFolder.gif" />
+    <Content Include="images\icon_exchangeFolder_over.gif" />
+    <Content Include="images\icon_file.gif" />
+    <Content Include="images\icon_fileFromWeb.gif" />
+    <Content Include="images\icon_fileFromWeb_over.gif" />
+    <Content Include="images\icon_fileSearch.gif" />
+    <Content Include="images\icon_fileSearch_over.gif" />
+    <Content Include="images\icon_file_over.gif" />
+    <Content Include="images\icon_find.gif" />
+    <Content Include="images\icon_find_over.gif" />
+    <Content Include="images\icon_font.gif" />
+    <Content Include="images\icon_font_over.gif" />
+    <Content Include="images\icon_headerFooter.gif" />
+    <Content Include="images\icon_headerFooter_over.gif" />
+    <Content Include="images\icon_help.gif" />
+    <Content Include="images\icon_help_over.gif" />
+    <Content Include="images\icon_listMembers.gif" />
+    <Content Include="images\icon_listMembers_over.gif" />
+    <Content Include="images\icon_mailRecipient.gif" />
+    <Content Include="images\icon_mailRecipientAttachment.gif" />
+    <Content Include="images\icon_mailRecipientAttachment_over.gif" />
+    <Content Include="images\icon_mailRecipientReview.gif" />
+    <Content Include="images\icon_mailRecipientReview_over.gif" />
+    <Content Include="images\icon_mailRecipient_over.gif" />
+    <Content Include="images\icon_new.gif" />
+    <Content Include="images\icon_new_over.gif" />
+    <Content Include="images\icon_normal.gif" />
+    <Content Include="images\icon_normal_over.gif" />
+    <Content Include="images\icon_open.gif" />
+    <Content Include="images\icon_OpenSolution.gif" />
+    <Content Include="images\icon_OpenSolution_over.gif" />
+    <Content Include="images\icon_open_over.gif" />
+    <Content Include="images\icon_outline.gif" />
+    <Content Include="images\icon_outline_over.gif" />
+    <Content Include="images\icon_paragraph.gif" />
+    <Content Include="images\icon_paragraph_over.gif" />
+    <Content Include="images\icon_parameterInfo.gif" />
+    <Content Include="images\icon_parameterInfo_over.gif" />
+    <Content Include="images\icon_paste.gif" />
+    <Content Include="images\icon_paste_over.gif" />
+    <Content Include="images\icon_point.gif" />
+    <Content Include="images\icon_powerPoint.gif" />
+    <Content Include="images\icon_powerPoint_over.gif" />
+    <Content Include="images\icon_print.gif" />
+    <Content Include="images\icon_printPreview.gif" />
+    <Content Include="images\icon_printPreview_over.gif" />
+    <Content Include="images\icon_print_over.gif" />
+    <Content Include="images\icon_project.gif" />
+    <Content Include="images\icon_projectFromWeb.gif" />
+    <Content Include="images\icon_projectFromWeb_over.gif" />
+    <Content Include="images\icon_project_over.gif" />
+    <Content Include="images\icon_readingLayout.gif" />
+    <Content Include="images\icon_readingLayout_over.gif" />
+    <Content Include="images\icon_repeat.gif" />
+    <Content Include="images\icon_revealFormatting.gif" />
+    <Content Include="images\icon_revealFormatting_over.gif" />
+    <Content Include="images\icon_routingRecipient.gif" />
+    <Content Include="images\icon_routingRecipient_over.gif" />
+    <Content Include="images\icon_save.gif" />
+    <Content Include="images\icon_saveAsWebPage.gif" />
+    <Content Include="images\icon_saveAsWebPage_over.gif" />
+    <Content Include="images\icon_save_over.gif" />
+    <Content Include="images\icon_stylesAndFormatting.gif" />
+    <Content Include="images\icon_stylesAndFormatting_over.gif" />
+    <Content Include="images\icon_tableOfContents.gif" />
+    <Content Include="images\icon_tableOfContents_over.gif" />
+    <Content Include="images\icon_thumbnails.gif" />
+    <Content Include="images\icon_thumbnails_over.gif" />
+    <Content Include="images\icon_undo.gif" />
+    <Content Include="images\icon_webLayout.gif" />
+    <Content Include="images\icon_webLayout_over.gif" />
+    <Content Include="images\lastest.gif" />
+    <Content Include="images\mark_list\bottom_00.gif" />
+    <Content Include="images\mark_list\bottom_00_00.gif" />
+    <Content Include="images\mark_list\bottom_01.gif" />
+    <Content Include="images\mark_list\bottom_02.gif" />
+    <Content Include="images\mark_list\bottom_03.gif" />
+    <Content Include="images\mark_list\bottom_04.gif" />
+    <Content Include="images\mark_list\bottom_05.gif" />
+    <Content Include="images\mark_list\crosscertseal.gif" />
+    <Content Include="images\member_cor_title.gif" />
+    <Content Include="images\ProductBest.gif" />
+    <Content Include="images\ProductHit.gif" />
+    <Content Include="images\ProductNew.gif" />
+    <Content Include="images\re.gif" />
+    <Content Include="images\reviewrating1.gif" />
+    <Content Include="images\reviewrating2.gif" />
+    <Content Include="images\reviewrating3.gif" />
+    <Content Include="images\reviewrating4.gif" />
+    <Content Include="images\reviewrating5.gif" />
+    <Content Include="images\search.gif" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\sub_title232.gif" />
+    <Content Include="images\title_banner.gif" />
+    <Content Include="images\title_category.gif" />
+    <Content Include="images\title_logo.gif" />
+    <Content Include="images\title_poll.gif" />
+    <Content Include="images\title_productlist.gif" />
+    <Content Include="images\title_statistic.gif" />
+    <Content Include="images\top_group_background.gif" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Company.aspx.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company.aspx.designer.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MainEvent.ascx.cs">
+      <DependentUpon>MainEvent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MainEvent.ascx.designer.cs">
+      <DependentUpon>MainEvent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MarkList.ascx.cs">
+      <DependentUpon>MarkList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MarkList.ascx.designer.cs">
+      <DependentUpon>MarkList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Navigator.ascx.cs">
+      <DependentUpon>Navigator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Navigator.ascx.designer.cs">
+      <DependentUpon>Navigator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SearchFormUserControl.ascx.cs">
+      <DependentUpon>SearchFormUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SearchFormUserControl.ascx.designer.cs">
+      <DependentUpon>SearchFormUserControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Carts\ShoppingCartDB.cs" />
+    <Compile Include="Models\CategoriesDB.cs" />
+    <Compile Include="Models\Categories\Category.cs" />
+    <Compile Include="Models\Categories\CategoryRepository.cs" />
+    <Compile Include="Models\CustomersDB.cs" />
+    <Compile Include="Models\OrdersDB.cs" />
+    <Compile Include="Models\ProductsDB.cs" />
+    <Compile Include="Models\Products\Product.cs" />
+    <Compile Include="Models\Products\ProductRepository.cs" />
+    <Compile Include="Models\Reviews\ReviewsDB.cs" />
+    <Compile Include="Models\Security.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPage.Master" />
+    <Content Include="images\ProductNewHitBestNone.psd" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -85,7 +410,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Documents\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
