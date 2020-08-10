@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddToCart.aspx" />
+    <Content Include="Admin\Order\AdminOrderList.aspx" />
     <Content Include="Admin\ZipCodeAddFromFile.aspx" />
     <Content Include="Agreement.aspx" />
     <Content Include="Agreement.txt" />
@@ -91,6 +92,7 @@
     <Content Include="CategoryList.aspx" />
     <Content Include="CheckID.aspx" />
     <Content Include="CheckLogin.aspx" />
+    <Content Include="CheckOut.aspx" />
     <Content Include="Common\Agreement.aspx" />
     <Content Include="Company.aspx" />
     <Content Include="Company.xml" />
@@ -360,6 +362,8 @@
     <Content Include="images\title_statistic.gif" />
     <Content Include="images\top_group_background.gif" />
     <Content Include="Login.aspx" />
+    <Content Include="OrderDetails.aspx" />
+    <Content Include="OrderList.aspx" />
     <Content Include="PopularItemsPage.aspx" />
     <Content Include="ProductAdd.aspx" />
     <Content Include="ProductCatalog.aspx" />
@@ -413,6 +417,13 @@
     <Compile Include="AddToCart.aspx.designer.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Order\AdminOrderList.aspx.cs">
+      <DependentUpon>AdminOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Order\AdminOrderList.aspx.designer.cs">
+      <DependentUpon>AdminOrderList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\ZipCodeAddFromFile.aspx.cs">
       <DependentUpon>ZipCodeAddFromFile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -461,6 +472,13 @@
     </Compile>
     <Compile Include="CheckLogin.aspx.designer.cs">
       <DependentUpon>CheckLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.aspx.cs">
+      <DependentUpon>CheckOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckOut.aspx.designer.cs">
+      <DependentUpon>CheckOut.aspx</DependentUpon>
     </Compile>
     <Compile Include="Common\Agreement.aspx.cs">
       <DependentUpon>Agreement.aspx</DependentUpon>
@@ -623,6 +641,20 @@
     <Compile Include="Models\Products\ProductRepository.cs" />
     <Compile Include="Models\Reviews\ReviewsDB.cs" />
     <Compile Include="Models\Security.cs" />
+    <Compile Include="OrderDetails.aspx.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderDetails.aspx.designer.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderList.aspx.cs">
+      <DependentUpon>OrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderList.aspx.designer.cs">
+      <DependentUpon>OrderList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PopularItemsPage.aspx.cs">
       <DependentUpon>PopularItemsPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

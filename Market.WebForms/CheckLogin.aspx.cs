@@ -11,7 +11,16 @@ namespace Market.WebForms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // 인증된 고객이라면 바로 주문서 페이지로 이동
+            if (Page.User.Identity.IsAuthenticated)
+            {
+                Response.Redirect("CheckOut.aspx");
+            }
+        }
+        protected void cmdGuestLogin_Click(object sender, EventArgs e)
+        {
+            // 비회원 주문으로 주문서 페이지 이동
+            Response.Redirect("CheckOut.aspx");
         }
     }
 }
