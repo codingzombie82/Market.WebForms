@@ -1,0 +1,109 @@
+﻿/* park yong joon's css 2004.07.05. */
+
+/* [1] 링크 색상 정의 */
+a:link /* 기본 링크 정의 */ {
+    font-family: verdana;
+    font-size: 11px;
+    color: navy;
+    text-decoration: none;
+}
+
+a:visited /* 방문 링크 정의 */ {
+    font-family: verdana;
+    font-size: 11px;
+    color: navy;
+    text-decoration: none;
+}
+
+a:active /* 활성 링크 정의 */ {
+    font-family: verdana;
+    font-size: 11px;
+    color: red;
+    text-decoration: none;
+}
+
+a:hover /* 마우스 오버 링크 정의 */ {
+    font-family: verdana;
+    font-size: 11px;
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+/* [2] 사용자 정의 스타일 */
+.button {
+    height: 20px;
+    border-width: 1;
+    border-style: ridge;
+    border-color: #d0d0d0;
+    background-color: #dfdfdf;
+}
+
+.editbox {
+    border: 1 solid black;
+    background-color: white;
+}
+
+.my_border1 {
+    background:;
+    border-top: 0 dashed;
+    border-left: 0 dashed;
+    border-right: 0 dashed;
+    border-bottom: 1 dashed black;
+}
+
+.my_border2 {
+    background:;
+    border-top: 1 dashed;
+    border-left: 1 dashed;
+    border-right: 1 dashed;
+    border-bottom: 1 dashed
+}
+/* [3] body 스타일 정의 */
+body {
+    background-color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: verdana;
+    color: #001960;
+    /* 스크롤바 색상 정의 */
+    scrollbar-face-color: #ffffff;
+    scrollbar-highlight-color: #3874c8;
+    scrollbar-shadow-color: #3874c8;
+    scrollbar-3dlight-color: #ffffff;
+    scrollbar-arrow-color: #3874c8;
+    scrollbar-track-color: #ffffff;
+    scrollbar-darkshadow-color: #ffffff
+}
+
+/* [4] 기본 태그 스타일 정의 */
+p, br, body, table, td, input, select, textarea, option, font {
+    font-family: verdana;
+    font-size: 11px;
+    font-style: normal;
+}
+
+select {
+    background-color: white;
+    font-family: verdana;
+    font-size: 11px;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+/* [5] 테이블 스타일 정의 */
+#my_table1 {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-right-color: black;
+    border-left-color: black;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+}

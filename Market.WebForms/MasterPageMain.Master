@@ -1,0 +1,161 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageMain.master.cs" Inherits="Market.WebForms.MasterPageMain" %>
+
+<%@ Register Src="~/Controls/Header.ascx" TagName="Header" TagPrefix="uc1" %>
+<%@ Register Src="/Controls/Navigator.ascx" TagName="Navigator" TagPrefix="uc2" %>
+<%@ Register Src="/Controls/MainEvent.ascx" TagName="MainEvent" TagPrefix="uc3" %>
+<%@ Register Src="~/Category.ascx" TagName="Category" TagPrefix="uc4" %>
+<%@ Register Src="~/Controls/MarkList.ascx" TagName="MarkList" TagPrefix="uc5" %>
+<%@ Register Src="~/Footer.ascx" TagName="Footer" TagPrefix="uc6" %>
+<%@ Register Src="~/Copyright.ascx" TagName="Copyright" TagPrefix="uc7" %>
+<%@ Register Src="~/AdRotator/MainAdRotator.ascx" TagName="MainAdRotator" TagPrefix="uc8" %>
+<%@ Register src="~/Notice/MainNotice.ascx" tagname="MainNotice" tagprefix="uc9" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Global.css" rel="stylesheet" type="text/css" />
+</head>
+<body leftmargin="0" topmargin="0">
+    <form id="form1" runat="server">
+    <div>
+        <!--Master Pages(마스터 페이지) 시작 : 전체 사이트의 레이아웃 결정-->
+        <div align="center">
+            <table width="770" cellpadding="0" cellspacing="0" border="0" id="Table1">
+                <tr>
+                    <td width="770" valign="top">
+                        <!--전체레이아웃 시작-->
+                        <table width="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#c0c0c0"
+                            id="Table2">
+                            <tr>
+                                <td width="100%">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="1" id="Table3">
+                                        <!--Navigator(네비게이터) 시작-->
+                                        <tr>
+                                            <td width="100%" colspan="2" bgcolor="#ffffff" height="30" align="center">
+                                                <uc1:Header ID="Header1" runat="server" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="100%" colspan="2" bgcolor="#ffffff" height="30" align="center">
+                                                <!--Navigation(네비게이션) 시작-->
+                                                <uc2:Navigator ID="Navigator1" runat="server" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="5" colspan="2" bgcolor="#0099ff">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="100%" align="right" colspan="2" bgcolor="#eeeeee" height="30" align="center">
+                                                <asp:LoginView ID="LoginView1" runat="server">
+                                                    <LoggedInTemplate>
+                                                        <asp:LoginStatus ID="LoginStatus2" runat="server" />
+                                                        &nbsp;
+                                                        <asp:HyperLink ID="lnkModify" runat="server" NavigateUrl="~/UserInformation.aspx">
+                                                            <asp:Label ID="lblUserID" runat="server"></asp:Label>
+                                                        </asp:HyperLink>
+                                                    </LoggedInTemplate>
+                                                    <AnonymousTemplate>
+                                                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                                                        &nbsp;
+                                                        <asp:HyperLink ID="lnkRegister" runat="server" NavigateUrl="~/Register.aspx">회원가입</asp:HyperLink>
+                                                    </AnonymousTemplate>
+                                                </asp:LoginView>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="100%" colspan="2" bgcolor="#016bce" height="30" align="center">
+                                                <!--메인배너-->
+                                                <table width="100%" cellpadding="0" cellspacing="0" border="0" id="Table4">
+                                                    <tr>
+                                                        <td width="500" align="center"><uc8:MainAdRotator ID="MainAdRotator1" runat="server" /></td>
+                                                        <td width="270" valign="top" align="center">
+                                                            <table width="260" cellpadding="0" cellspacing="0" border="0" align="center" id="Table5">
+                                                                <tr>
+                                                                    <td height="5">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <uc9:MainNotice ID="MainNotice1" runat="server" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="5">
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--메인배너 끝-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="100%" colspan="2" valign="top" bgcolor="#ffffff" align="center" height="30">
+                                                <uc3:MainEvent ID="MainEvent1" runat="server" />
+                                            </td>
+                                        </tr>
+                                        <!--Navigator(네비게이터) 끝-->
+                                        <!--content(컨텐츠) 시작-->
+                                        <tr>
+                                            <td width="185" rowspan="2" valign="top" bgcolor="#efefef" align="left" height="50">
+                                                <!--카테고리 / Tree View -->
+                                                <uc4:Category ID="Category1" runat="server" />
+                                            </td>
+                                            <td width="585" valign="middle" bgcolor="#ffffff" align="left" height="25">
+                                                <!--메인, 컨텐츠 -->
+                                                &nbsp;현재위치 :
+                                                <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                                                </asp:SiteMapPath>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="585" valign="top" bgcolor="#ffffff" align="left" height="50">
+                                                <!--메인, 컨텐츠 -->
+                                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                                <!--메인, 컨텐츠 끝-->
+                                            </td>
+                                        </tr>
+                                        <!--content(컨텐츠) 끝-->
+                                        <!--Copyright(카피라이트) 시작-->
+                                        <tr>
+                                            <td width="100%" colspan="2" bgcolor="#ffffff" align="center" height="30">
+                                                <!--주요 마크 리스트-->
+                                                <uc5:MarkList ID="MarkList1" runat="server" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="100%" colspan="2" bgcolor="#0099ff" align="center" height="30">
+                                                <!--표준약관/개인정보조호정책/회사소개/이용안내/사이트맵-->
+                                                <!--표준약관/개인정보조호정책/회사소개/이용안내 끝-->
+                                                <uc6:Footer ID="Footer1" runat="server" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="100%" colspan="2" bgcolor="#ffffff" align="center" height="30">
+                                                <uc7:Copyright ID="Copyright1" runat="server" />
+                                            </td>
+                                        </tr>
+                                        <!--Copyright(카피라이트) 끝-->
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--전체레이아웃 끝-->
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--Master Pages(마스터 페이지) 끝 : 전체 사이트의 레이아웃 결정-->
+    </div>
+    </form>
+</body>
+</html>
+

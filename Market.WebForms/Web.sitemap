@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="HOME"  description="처음으로">
+
+    <siteMapNode url="~/Login.aspx" title="로그인"  description="회원 로그인" />
+    <siteMapNode url="~/Register.aspx" title="회원가입"  description="회원 가입" />
+
+
+    <siteMapNode url="~/ProductPages.aspx" title="전체상품리스트" description="전체상품리스트" />
+    <siteMapNode url="~/ProductsList.aspx" title="카테고리에 따른 상품리스트" description="카테고리에 따른 상품리스트" />
+    <siteMapNode url="~/SearchResults.aspx" title="상품 검색 결과" description="상품 검색 결과" />
+    <siteMapNode url="~/ProductDetails.aspx" title="상품 상세 보기" description="상품 상세 보기" />
+
+
+    <siteMapNode url="~/ShoppingCart.aspx" title="장바구니" description="장바구니 페이지" />
+    <siteMapNode url="~/CheckLogin.aspx" title="회원로그인" description="회원로그인" />
+    <siteMapNode url="~/CheckOut.aspx" title="주문서" description="장바구니 페이지" />
+    <siteMapNode url="~/OrderList.aspx" title="주문(배송)정보 조회" description="배송정보 조회" />
+    <siteMapNode url="~/OrderDetails.aspx" title="주문상세내역" description="주문상세내역" />
+
+
+    <siteMapNode url="~/Common/Agreement.aspx" title="이용약관"  description="이용약관" />
+    <siteMapNode url="~/Common/Help.aspx" title="이용안내"  description="이용안내" />
+    <siteMapNode url="~/Common/Introduce.aspx" title="회사소개"  description="회사소개" />
+    <siteMapNode url="~/Common/Privacy.aspx" title="개인정보보호정책"  description="개인정보보호정책" />
+
+    <siteMapNode url="~/Admin/Default.aspx" title="관리자" description="관리자 모드">
+      <siteMapNode url="~/CategoryAdd.aspx" title="카테고리 등록" description="카테고리 등록" />
+      <siteMapNode url="~/ProductAdd.aspx" title="카테고리에 따른 상품 등록" description="카테고리에 따른 상품 등록" />
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>

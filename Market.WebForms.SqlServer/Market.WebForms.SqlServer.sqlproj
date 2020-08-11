@@ -57,8 +57,51 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="dbo" />
+    <Folder Include="Notice" />
+    <Folder Include="Reply" />
+    <Folder Include="Schedule" />
+    <Folder Include="Scripts" />
+    <Folder Include="SiteStatistics" />
+    <Folder Include="Surveys" />
+    <Folder Include="Notice\Tables" />
+    <Folder Include="Notice\Stored Procedures" />
+    <Folder Include="SiteStatistics\Stored Procedures" />
+    <Folder Include="Surveys\Tables" />
+    <Folder Include="SiteStatistics\Tables" />
+    <Folder Include="Schedule\Stored Procedures" />
+    <Folder Include="Schedule\Tables" />
+    <Folder Include="Reply\Stored Procedures" />
+    <Folder Include="Reply\Tables" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\ShoppingDB.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Scripts\MarketSetup.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Notice\Stored Procedures\DeleteNotice.sql" />
+    <Build Include="Notice\Stored Procedures\ListNotice.sql" />
+    <Build Include="Notice\Stored Procedures\ModifyNotice.sql" />
+    <Build Include="Notice\Stored Procedures\SearchNotice.sql" />
+    <Build Include="Notice\Stored Procedures\ViewNotice.sql" />
+    <Build Include="Notice\Stored Procedures\WriteNotice.sql" />
+    <Build Include="Notice\Tables\Notice.sql" />
+    <Build Include="SiteStatistics\Stored Procedures\AddCounter.sql" />
+    <Build Include="SiteStatistics\Stored Procedures\GetTodayVisit.sql" />
+    <Build Include="SiteStatistics\Stored Procedures\GetTotalVisit.sql" />
+    <Build Include="Surveys\Tables\Surveys.sql" />
+    <Build Include="SiteStatistics\Tables\SiteStatistics.sql" />
+    <Build Include="Schedule\Stored Procedures\AddSchedule.sql" />
+    <Build Include="Schedule\Stored Procedures\GetSchedule.sql" />
+    <Build Include="Schedule\Tables\Schedule.sql" />
+    <Build Include="Reply\Stored Procedures\DeleteReply.sql" />
+    <Build Include="Reply\Stored Procedures\ListReply.sql" />
+    <Build Include="Reply\Stored Procedures\ModifyeReply.sql" />
+    <Build Include="Reply\Stored Procedures\ReadPasswordReply.sql" />
+    <Build Include="Reply\Stored Procedures\ReplyReply.sql" />
+    <Build Include="Reply\Stored Procedures\ViewReply.sql" />
+    <Build Include="Reply\Stored Procedures\WriteReply.sql" />
+    <Build Include="Reply\Tables\Reply.sql" />
   </ItemGroup>
 </Project>

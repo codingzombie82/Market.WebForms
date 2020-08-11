@@ -83,24 +83,51 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddToCart.aspx" />
+    <Content Include="Admin\Customers\CustomerManager.aspx" />
+    <Content Include="Admin\Customers\CustomerView.aspx" />
+    <Content Include="Admin\Notice\Delete.aspx" />
+    <Content Include="Admin\Notice\Documents\Notice.sql" />
+    <Content Include="Admin\Notice\List.aspx" />
+    <Content Include="Admin\Notice\Modify.aspx" />
+    <Content Include="Admin\Notice\Search.aspx" />
+    <Content Include="Admin\Notice\View.aspx" />
+    <Content Include="Admin\Notice\Write.aspx" />
     <Content Include="Admin\Order\AdminOrderList.aspx" />
+    <Content Include="Admin\PasswordEncrypt.aspx" />
+    <Content Include="Admin\QA\QA.aspx" />
     <Content Include="Admin\ZipCodeAddFromFile.aspx" />
+    <Content Include="AdRotator\FrmAdRotator.xml" />
+    <Content Include="AdRotator\images\banner1.gif" />
+    <Content Include="AdRotator\images\banner2.gif" />
+    <Content Include="AdRotator\images\banner3.gif" />
+    <Content Include="AdRotator\images\banner4.gif" />
+    <Content Include="AdRotator\images\toolbox.jpg" />
+    <Content Include="AdRotator\MainAdRotator.ascx" />
     <Content Include="Agreement.aspx" />
     <Content Include="Agreement.txt" />
     <Content Include="AlsoBought.aspx" />
+    <Content Include="Banner\images\mvp.jpg" />
+    <Content Include="Banner\MainBanner.ascx" />
     <Content Include="CategoryAdd.aspx" />
     <Content Include="CategoryList.aspx" />
+    <Content Include="Category.ascx" />
+    <Content Include="CategoryWithTreeView.aspx" />
     <Content Include="CheckID.aspx" />
     <Content Include="CheckLogin.aspx" />
     <Content Include="CheckOut.aspx" />
     <Content Include="Common\Agreement.aspx" />
+    <Content Include="Common\Help.aspx" />
+    <Content Include="Common\Introduce.aspx" />
+    <Content Include="Common\Privacy.aspx" />
+    <Content Include="Common\Sitemap.aspx" />
     <Content Include="Company.aspx" />
     <Content Include="Company.xml" />
     <Content Include="Company.xsl" />
     <Content Include="Company.xslt" />
     <Content Include="CompanyAdmin.aspx" />
     <Content Include="Controls\AlsoBoughtUserControl.ascx" />
-    <Content Include="Controls\CategoryListUserControl.ascx" />
+    <Content Include="Controls\CategoryList.ascx" />
+    <Content Include="Controls\CategoryWithTreeViewUserControl.ascx" />
     <Content Include="Controls\EventNamesUserControl.ascx" />
     <Content Include="Controls\Header.ascx" />
     <Content Include="Controls\LoginUserControl.ascx" />
@@ -113,9 +140,25 @@
     <Content Include="Controls\ReviewListUserControl.ascx" />
     <Content Include="Controls\SearchFormUserControl.ascx" />
     <Content Include="Controls\TodayShoppingUserControl.ascx" />
+    <Content Include="Copyright.ascx" />
+    <Content Include="Counter\Documents\SiteStatistics.sql" />
+    <Content Include="Counter\images\d0.gif" />
+    <Content Include="Counter\images\d1.gif" />
+    <Content Include="Counter\images\d2.gif" />
+    <Content Include="Counter\images\d3.gif" />
+    <Content Include="Counter\images\d4.gif" />
+    <Content Include="Counter\images\d5.gif" />
+    <Content Include="Counter\images\d6.gif" />
+    <Content Include="Counter\images\d7.gif" />
+    <Content Include="Counter\images\d8.gif" />
+    <Content Include="Counter\images\d9.gif" />
+    <Content Include="Counter\MainCounter.ascx" />
+    <Content Include="Default.aspx" />
     <Content Include="EventNames.aspx" />
+    <Content Include="Footer.ascx" />
     <Content Include="GetZipCode.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Global.css" />
     <Content Include="images\arrow_right.gif" />
     <Content Include="images\arrow_right_over.gif" />
     <Content Include="images\background.gif" />
@@ -361,9 +404,24 @@
     <Content Include="images\title_productlist.gif" />
     <Content Include="images\title_statistic.gif" />
     <Content Include="images\top_group_background.gif" />
+    <Content Include="jQuery\AutoComplete\AutoComplete.htm" />
+    <Content Include="jQuery\AutoComplete\AutoCompleteControl.ascx" />
+    <Content Include="jQuery\AutoComplete\Default.aspx" />
+    <Content Include="jQuery\AutoComplete\jquery.autocomplete.css" />
+    <Content Include="jQuery\AutoComplete\jquery.autocomplete.js" />
+    <Content Include="jQuery\Rotator\Default.aspx" />
+    <Content Include="jQuery\Rotator\jquery.rotator.js" />
+    <Content Include="jQuery\Rotator\Rotator.htm" />
+    <Content Include="jQuery\Rotator\RotatorControl.ascx" />
+    <Content Include="js\jquery-1.3.2-vsdoc2.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Notice\List.aspx" />
+    <Content Include="Notice\MainNotice.ascx" />
+    <Content Include="Notice\Search.aspx" />
+    <Content Include="Notice\View.aspx" />
     <Content Include="OrderDetails.aspx" />
     <Content Include="OrderList.aspx" />
+    <Content Include="PasswordReminder.aspx" />
     <Content Include="PopularItemsPage.aspx" />
     <Content Include="ProductAdd.aspx" />
     <Content Include="ProductCatalog.aspx" />
@@ -393,7 +451,19 @@
     <Content Include="ProductPages.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Documents\zipcode_20090929.csv" />
+    <Content Include="MasterPageMain.Master" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
+    <Content Include="Reply\Default.aspx" />
+    <Content Include="Reply\Delete.aspx" />
+    <Content Include="Reply\Documents\WebReply.sql" />
+    <Content Include="Reply\images\new.gif" />
+    <Content Include="Reply\images\re.gif" />
+    <Content Include="Reply\List.aspx" />
+    <Content Include="Reply\Modify.aspx" />
+    <Content Include="Reply\Reply.aspx" />
+    <Content Include="Reply\Search.aspx" />
+    <Content Include="Reply\View.aspx" />
+    <Content Include="Reply\Write.aspx" />
     <Content Include="ReviewList.aspx" />
     <Content Include="Scripts\jquery-3.5.1.js" />
     <Content Include="Scripts\jquery-3.5.1.min.js" />
@@ -407,7 +477,17 @@
     <Content Include="SearchResults.aspx" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="ShowImages.aspx" />
+    <Content Include="Survey\Default.aspx" />
+    <Content Include="Survey\Documents\Survey.sql" />
+    <Content Include="Survey\images\graph.gif" />
+    <Content Include="Survey\MainVote.ascx" />
+    <Content Include="Survey\SurveyList.aspx" />
+    <Content Include="Survey\SurveyView.ascx" />
+    <Content Include="Survey\SurveyView.aspx" />
+    <Content Include="Survey\SurveyVote.aspx" />
+    <Content Include="Survey\SurveyWrite.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddToCart.aspx.cs">
@@ -417,6 +497,62 @@
     <Compile Include="AddToCart.aspx.designer.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Customers\CustomerManager.aspx.cs">
+      <DependentUpon>CustomerManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Customers\CustomerManager.aspx.designer.cs">
+      <DependentUpon>CustomerManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Customers\CustomerView.aspx.cs">
+      <DependentUpon>CustomerView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Customers\CustomerView.aspx.designer.cs">
+      <DependentUpon>CustomerView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Notice\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Notice\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Notice\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Notice\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Notice\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Notice\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Notice\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Notice\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Notice\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Notice\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Notice\Write.aspx.cs">
+      <DependentUpon>Write.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Notice\Write.aspx.designer.cs">
+      <DependentUpon>Write.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Order\AdminOrderList.aspx.cs">
       <DependentUpon>AdminOrderList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -424,12 +560,33 @@
     <Compile Include="Admin\Order\AdminOrderList.aspx.designer.cs">
       <DependentUpon>AdminOrderList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\PasswordEncrypt.aspx.cs">
+      <DependentUpon>PasswordEncrypt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PasswordEncrypt.aspx.designer.cs">
+      <DependentUpon>PasswordEncrypt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QA\QA.aspx.cs">
+      <DependentUpon>QA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QA\QA.aspx.designer.cs">
+      <DependentUpon>QA.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\ZipCodeAddFromFile.aspx.cs">
       <DependentUpon>ZipCodeAddFromFile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\ZipCodeAddFromFile.aspx.designer.cs">
       <DependentUpon>ZipCodeAddFromFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdRotator\MainAdRotator.ascx.cs">
+      <DependentUpon>MainAdRotator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdRotator\MainAdRotator.ascx.designer.cs">
+      <DependentUpon>MainAdRotator.ascx</DependentUpon>
     </Compile>
     <Compile Include="Agreement.aspx.cs">
       <DependentUpon>Agreement.aspx</DependentUpon>
@@ -445,6 +602,13 @@
     <Compile Include="AlsoBought.aspx.designer.cs">
       <DependentUpon>AlsoBought.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Banner\MainBanner.ascx.cs">
+      <DependentUpon>MainBanner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Banner\MainBanner.ascx.designer.cs">
+      <DependentUpon>MainBanner.ascx</DependentUpon>
+    </Compile>
     <Compile Include="CategoryAdd.aspx.cs">
       <DependentUpon>CategoryAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -458,6 +622,20 @@
     </Compile>
     <Compile Include="CategoryList.aspx.designer.cs">
       <DependentUpon>CategoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Category.ascx.cs">
+      <DependentUpon>Category.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.ascx.designer.cs">
+      <DependentUpon>Category.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryWithTreeView.aspx.cs">
+      <DependentUpon>CategoryWithTreeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryWithTreeView.aspx.designer.cs">
+      <DependentUpon>CategoryWithTreeView.aspx</DependentUpon>
     </Compile>
     <Compile Include="CheckID.aspx.cs">
       <DependentUpon>CheckID.aspx</DependentUpon>
@@ -487,6 +665,34 @@
     <Compile Include="Common\Agreement.aspx.designer.cs">
       <DependentUpon>Agreement.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Common\Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Introduce.aspx.cs">
+      <DependentUpon>Introduce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Introduce.aspx.designer.cs">
+      <DependentUpon>Introduce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Privacy.aspx.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Privacy.aspx.designer.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Sitemap.aspx.cs">
+      <DependentUpon>Sitemap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Sitemap.aspx.designer.cs">
+      <DependentUpon>Sitemap.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Company.aspx.cs">
       <DependentUpon>Company.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -508,12 +714,19 @@
     <Compile Include="Controls\AlsoBoughtUserControl.ascx.designer.cs">
       <DependentUpon>AlsoBoughtUserControl.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Controls\CategoryListUserControl.ascx.cs">
-      <DependentUpon>CategoryListUserControl.ascx</DependentUpon>
+    <Compile Include="Controls\CategoryList.ascx.cs">
+      <DependentUpon>CategoryList.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Controls\CategoryListUserControl.ascx.designer.cs">
-      <DependentUpon>CategoryListUserControl.ascx</DependentUpon>
+    <Compile Include="Controls\CategoryList.ascx.designer.cs">
+      <DependentUpon>CategoryList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CategoryWithTreeViewUserControl.ascx.cs">
+      <DependentUpon>CategoryWithTreeViewUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CategoryWithTreeViewUserControl.ascx.designer.cs">
+      <DependentUpon>CategoryWithTreeViewUserControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\EventNamesUserControl.ascx.cs">
       <DependentUpon>EventNamesUserControl.ascx</DependentUpon>
@@ -599,12 +812,40 @@
     <Compile Include="Controls\TodayShoppingUserControl.ascx.designer.cs">
       <DependentUpon>TodayShoppingUserControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Copyright.ascx.cs">
+      <DependentUpon>Copyright.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Copyright.ascx.designer.cs">
+      <DependentUpon>Copyright.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Counter\MainCounter.ascx.cs">
+      <DependentUpon>MainCounter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Counter\MainCounter.ascx.designer.cs">
+      <DependentUpon>MainCounter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EventNames.aspx.cs">
       <DependentUpon>EventNames.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EventNames.aspx.designer.cs">
       <DependentUpon>EventNames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
     </Compile>
     <Compile Include="GetZipCode.aspx.cs">
       <DependentUpon>GetZipCode.aspx</DependentUpon>
@@ -615,6 +856,25 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="jQuery\AutoComplete\AutoCompleteControl.ascx.cs">
+      <DependentUpon>AutoCompleteControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jQuery\AutoComplete\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jQuery\Rotator\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jQuery\Rotator\RotatorControl.ascx.cs">
+      <DependentUpon>RotatorControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jQuery\Rotator\RotatorControl.ascx.designer.cs">
+      <DependentUpon>RotatorControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -630,6 +890,13 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="MasterPageMain.Master.cs">
+      <DependentUpon>MasterPageMain.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPageMain.Master.designer.cs">
+      <DependentUpon>MasterPageMain.Master</DependentUpon>
+    </Compile>
     <Compile Include="Models\Carts\ShoppingCartDB.cs" />
     <Compile Include="Models\CategoriesDB.cs" />
     <Compile Include="Models\Categories\Category.cs" />
@@ -641,6 +908,34 @@
     <Compile Include="Models\Products\ProductRepository.cs" />
     <Compile Include="Models\Reviews\ReviewsDB.cs" />
     <Compile Include="Models\Security.cs" />
+    <Compile Include="Notice\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notice\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notice\MainNotice.ascx.cs">
+      <DependentUpon>MainNotice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notice\MainNotice.ascx.designer.cs">
+      <DependentUpon>MainNotice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Notice\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notice\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notice\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notice\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
     <Compile Include="OrderDetails.aspx.cs">
       <DependentUpon>OrderDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -654,6 +949,13 @@
     </Compile>
     <Compile Include="OrderList.aspx.designer.cs">
       <DependentUpon>OrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordReminder.aspx.cs">
+      <DependentUpon>PasswordReminder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordReminder.aspx.designer.cs">
+      <DependentUpon>PasswordReminder.aspx</DependentUpon>
     </Compile>
     <Compile Include="PopularItemsPage.aspx.cs">
       <DependentUpon>PopularItemsPage.aspx</DependentUpon>
@@ -705,6 +1007,62 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Reply\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reply\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reply\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reply\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reply\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reply\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reply\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reply\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reply\Reply.aspx.cs">
+      <DependentUpon>Reply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reply\Reply.aspx.designer.cs">
+      <DependentUpon>Reply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reply\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reply\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reply\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reply\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reply\Write.aspx.cs">
+      <DependentUpon>Write.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reply\Write.aspx.designer.cs">
+      <DependentUpon>Write.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ReviewList.aspx.cs">
       <DependentUpon>ReviewList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -746,6 +1104,49 @@
     </Compile>
     <Compile Include="ShowImages.aspx.designer.cs">
       <DependentUpon>ShowImages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\MainVote.ascx.cs">
+      <DependentUpon>MainVote.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\MainVote.ascx.designer.cs">
+      <DependentUpon>MainVote.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\SurveyList.aspx.cs">
+      <DependentUpon>SurveyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\SurveyList.aspx.designer.cs">
+      <DependentUpon>SurveyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\SurveyView.ascx.cs">
+      <DependentUpon>SurveyView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\SurveyView.aspx.cs">
+      <DependentUpon>SurveyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\SurveyView.aspx.designer.cs">
+      <DependentUpon>SurveyView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\SurveyVote.aspx.cs">
+      <DependentUpon>SurveyVote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\SurveyVote.aspx.designer.cs">
+      <DependentUpon>SurveyVote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\SurveyWrite.aspx.cs">
+      <DependentUpon>SurveyWrite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\SurveyWrite.aspx.designer.cs">
+      <DependentUpon>SurveyWrite.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

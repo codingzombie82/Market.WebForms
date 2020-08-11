@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- 대소문자 구문, 공백 주의 -->
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/AdRotator/images/banner1.gif</ImageUrl>
+		<NavigateUrl>http://www.codingzombie.com//</NavigateUrl>
+		<AlternateText>코딩좀비닷넷</AlternateText>
+		<keyword>코딩좀비닷넷</keyword>
+		<Impressions>25</Impressions>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/AdRotator/images/banner2.gif</ImageUrl>
+		<NavigateUrl>http://www.codingzombie.com/</NavigateUrl>
+		<AlternateText>코딩좀비닷넷</AlternateText>
+		<keyword>코딩좀비닷넷</keyword>
+		<Impressions>25</Impressions>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/AdRotator/images/banner3.gif</ImageUrl>
+		<NavigateUrl>http://www.codingzombie.com/</NavigateUrl>
+		<AlternateText>코딩좀비닷넷</AlternateText>
+		<keyword>코딩좀비닷넷</keyword>
+		<Impressions>25</Impressions>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/AdRotator/images/banner4.gif</ImageUrl>
+    <NavigateUrl>http://www.codingzombie.com/</NavigateUrl>
+		<AlternateText>코딩좀비닷넷</AlternateText>
+		<keyword>코딩좀비닷넷</keyword>
+		<Impressions>25</Impressions>
+	</Ad>
+</Advertisements>
